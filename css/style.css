@@ -19,10 +19,22 @@ header, footer {
 
 section {
     background-image: url(/multimedia/background.jpg);
-    padding-top: 4%;
-    padding-bottom: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 a{
     color: black;
+}
+
+.intro {
+    text-align: center;
+    font-weight: 1000;
+    margin-bottom: 10px;
+}
+
+.img-accordion {
+    margin: 0 auto;
+    width: 600px;
+    height: 300px;
 }
