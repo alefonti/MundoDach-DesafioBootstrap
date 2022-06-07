@@ -1,0 +1,49 @@
+$color-fondo: #f6c4cd;
+
+body {
+    background-image: url(/multimedia/background.jpg);
+    header {
+        background-color: $color-fondo;
+        .logo {
+            width: 250px;
+            height: 200px;
+            padding:  0;
+        }
+        a{
+            color: black;
+        }
+    }
+    .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='00000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    }
+    
+    .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='00000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    }
+
+    section {
+        padding: 8% 2%;
+        .intro {
+            text-align: center;
+            background-color: white;
+            margin-bottom: 3%;
+        }
+        .img-accordion {
+            margin: 10px 0;
+            width: 600px;
+            height: 300px;
+        }
+    }
+     
+    footer {
+        background-color: #f6c4cd;
+        .adopt-img {
+            width: 125px;
+            height: 150px;
+        }
+        .logo {
+            width: 125px;
+            height: 150px;
+        }
+    }
+}

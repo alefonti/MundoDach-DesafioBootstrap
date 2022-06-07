@@ -1,39 +1,46 @@
-.carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='00000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+body {
+  background-image: url(/multimedia/background.jpg);
+}
+body header {
+  background-color: #f6c4cd;
+}
+body header .logo {
+  width: 250px;
+  height: 200px;
+  padding: 0;
+}
+body header a {
+  color: black;
+}
+body .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='00000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+body .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='00000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+body section {
+  padding: 8% 2%;
+}
+body section .intro {
+  text-align: center;
+  background-color: white;
+  margin-bottom: 3%;
+}
+body section .img-accordion {
+  margin: 10px 0;
+  width: 600px;
+  height: 300px;
+}
+body footer {
+  background-color: #f6c4cd;
+}
+body footer .adopt-img {
+  width: 125px;
+  height: 150px;
+}
+body footer .logo {
+  width: 125px;
+  height: 150px;
 }
 
-.carousel-control-next-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='00000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-}
-
-header, footer {
-    background-color: #f6c4cd;
-}
-
-.adopt-img {
-    padding-top: 4%;
-    width: 200px;
-    height: 250px;
-}
-
-section {
-    background-image: url(/multimedia/background.jpg);
-    padding-top: 2%;
-    padding-bottom: 2%;
-}
-
-a{
-    color: black;
-}
-
-.intro {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.img-accordion {
-    margin: 0 auto;
-    width: 600px;
-    height: 300px;
-}
-
+/*# sourceMappingURL=style.css.map */
