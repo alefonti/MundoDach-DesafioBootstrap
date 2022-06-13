@@ -10,19 +10,23 @@ body {
     header {
         background-color: $color-fondo;
         .logo {
-            @include img-size(250px, 200px)
-            padding:  0;
-        }
-        a{
-            color: black;
+            @include img-size(250px, 200px);
         }
     }
-    .carousel-control-prev-icon, .carousel-control-next-icon {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='00000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-    }
+    
 
     section {
+
         padding: 8% 2%;
+
+        .carousel-control-prev-icon{
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='00000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+        }
+        
+        .carousel-control-next-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='00000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+        }
+
         .intro {
             text-align: center;
             background-color: white;
@@ -30,14 +34,16 @@ body {
         }
         .img-accordion {
             margin: 10px 0;
-            @include img-size(600,300);
+            @include img-size(600px,300px);
         }
     }
      
     footer {
         background-color: #f6c4cd;
-        .adopt-img, logo {
-            @include img-size(125,150);
-        }   
+        .adopt-img, .logo {
+            @include img-size(125px,150px);
+            width: 125px;
+            height: 150px;
+        }
     }
 }
