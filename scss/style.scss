@@ -1,76 +1,17 @@
 @import 'base/colors';
 @import 'base/mixins';
-
-.boton {
-    border: 1px solid black;
-    background-color: $color-fondo;
-    border-radius: 5px;
-    padding: 2% 2%;
-    text-decoration: none;
-    color: black;
-}
-
-.boton-cartas {
-    @extend .boton; 
-    display: flex;
-    justify-content: center;
-    height: 20%;
-    width: 40%;
-}
-
-.container-boton {
-    display: flex;
-    justify-content: center;
-}
+@import 'base/buttons';
+@import 'base/animations';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/index';
+@import 'components/infopages';
+@import 'components/cards';
 
 body {
     background-image: url(/multimedia/background.jpg);
-    header {
-        background-color: $color-fondo;
-        .logo {
-            @include img-size(250px, 200px);
-        }
-        .sticky {
-            position: sticky;
-            top: 0;  
-        }
-    }
-    
-
     section {
-
         padding: 8% 2%;
-
-        .container-cards {
-            margin: 3% 2%;
-            .card {
-                margin: 0% 1%;
-            }
-        }
-
-        .carousel-control-prev-icon{
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='00000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-        }
-        
-        .carousel-control-next-icon {
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='00000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-        }
-
-        .intro {
-            text-align: center;
-            background-color: white;
-            margin-bottom: 3%;
-        }
-        .img-accordion {
-            margin: 10px 0;
-            @include img-size(300px,600px);
-        }
-    }
-     
-    footer {
-        background-color: #f6c4cd;
-        .adopt-img, .logo {
-            @include img-size(125px,150px);
-        }
-    }
+    }      
 }
+

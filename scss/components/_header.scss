@@ -1,0 +1,10 @@
+header {
+    background-color: $color-fondo;
+    .logo {
+        @include img-size(250px, 200px);
+    }
+    .sticky {
+        position: sticky;
+        top: 0;  
+    }
+}

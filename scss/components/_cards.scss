@@ -1,0 +1,19 @@
+section {
+    .container-cards {
+        margin: 3% 2%;
+        .card {
+            margin: 0% 1%;
+            .container-boton {
+                display: flex;
+                justify-content: center;
+                .boton-cartas {
+                    @extend .boton; 
+                    display: flex;
+                    justify-content: center;
+                    height: 20%;
+                    width: 40%;
+                }
+            } 
+        }
+    }
+}

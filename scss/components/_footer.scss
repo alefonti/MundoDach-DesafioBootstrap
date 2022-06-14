@@ -1,0 +1,6 @@
+footer {
+    background-color: #f6c4cd;
+    .adopt-img, .logo {
+        @include img-size(125px,150px);
+    }
+}
