@@ -30,7 +30,8 @@
     }
 
     .img-carousel {
-        @include img-size(100%, 100%)
+        @include img-size(50%, 50%);
+        margin: 0 25%;
     }
 
 }
