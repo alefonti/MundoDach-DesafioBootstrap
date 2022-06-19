@@ -6,7 +6,7 @@ section {
     }
     .img-accordion {
         margin: 10px 0;
-        @include img-size(100%,100%);
+        @include img-size(48%,48%);
     }
 
     .container-img-colores {
@@ -15,6 +15,16 @@ section {
     }
 
     .img-colores {
-        @include img-size(100%,100%);
+        @include img-size(58%,58%);
+    }
+
+    @media screen and (max-width: 750px) {
+        .img-accordion {
+            @include img-size(100%,100%);
+        }
+
+        .img-colores {
+            @include img-size(100%,100%);
+        }
     }
 }
