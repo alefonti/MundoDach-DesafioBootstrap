@@ -67,6 +67,9 @@ footer .adopt-img, footer .logo {
   width: 50%;
   margin: 0 25%;
 }
+.inicio .videos-container {
+  margin-bottom: 2%;
+}
 
 section .intro {
   text-align: center;
@@ -116,10 +119,10 @@ section .container-cards .card .container-boton .boton-cartas {
 }
 
 body {
-  background-image: url(/multimedia/background.jpg);
+  background-image: url(/multimedia/images/background.jpg);
 }
 body section {
-  padding: 8% 2%;
+  padding: 1% 2% 2% 2%;
 }
 
 .disclaimer {
