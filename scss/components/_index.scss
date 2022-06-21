@@ -9,17 +9,9 @@
         background-color: $color-fondo;
     }
 
-    @media screen and (max-width:700px) {
-        h1, h2 {
-            font-size: medium;
-        }
-    }
+    
 
-    @media screen and (max-width:300px) {
-        h1, h2 {
-            font-size: small;
-        }
-    }
+    
 
     .carousel-control-prev-icon{
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='00000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
@@ -35,6 +27,37 @@
     }
 
     .videos-container {
-        margin-bottom: 2%;
+        margin-bottom: 4%;
+        margin-left: 2%;
+    }
+
+    .main-video {
+        height: 100%;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .inicio {
+        h1, h2 {
+            font-size: medium;
+        }
+
+        .img-carousel {
+            @include img-size(70%, 80%);
+            margin: 0 10%;
+        } 
+
+        .main-video {
+            @include img-size(120%, 95%);
+        }
+    }
+}
+
+@media screen and (max-width:300px) {
+    .inicio {
+        h1, h2 {
+            font-size: small;
+        }
     }
 }
