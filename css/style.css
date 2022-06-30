@@ -37,12 +37,8 @@ footer .adopt-img, footer .logo {
   width: 150px;
 }
 
-.inicio h1, .inicio h2 {
-  color: black;
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+.inicio h1, .inicio h2, .inicio h3 {
+  text-align: center;
 }
 .inicio .presentacion {
   background-image: url(/multimedia/images/fondo-pres.png);
@@ -101,6 +97,26 @@ section .img-accordion {
   margin: 10px 0;
   height: 48%;
   width: 48%;
+}
+section .accordion-button:not(.collapsed) {
+  color: black !important;
+  font-weight: 500;
+  background-color: #f6c4cd !important;
+}
+section .accordion-button:link, section .accordion-button:visited, section .accordion-button:hover, section .accordion-button:active {
+  background-color: #f6c4cd !important;
+  color: black !important;
+  font-weight: 500;
+  text-decoration: none !important;
+  border: hidden !important;
+  border-color: #FFF !important;
+  box-shadow: 0px !important;
+}
+section .accordion-button:focus {
+  z-index: 3;
+  border-color: #FFF !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #FFF !important;
 }
 section .container-img-colores {
   display: flex;
