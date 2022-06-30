@@ -1,5 +1,5 @@
 {
-  "name": "desafio-bootstrap",
+  "name": "Mundo Dachshund",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -11,11 +11,11 @@
     "type": "git",
     "url": "git+https://github.com/alefonti/MundoDach-DesafioBootstrap.git"
   },
-  "author": "",
+  "author": "Alejandro Fontinovo",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/alefonti/MundoDach-DesafioBootstrap/issues"
   },
   "homepage": "https://github.com/alefonti/MundoDach-DesafioBootstrap#readme",
-  "description": ""
+  "description": "Pagina dedicada a la información y entretenimiento referente a los perros Dachshund, mejor conocidos como perros salchicha."
 }
