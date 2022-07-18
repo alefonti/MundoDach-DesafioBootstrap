@@ -37,6 +37,13 @@
         height: 100%;
         width: 90%;
     }
+    
+    .container-boton {
+        display: flex;
+        justify-content: center;
+        margin-top: 2%;
+    }
+
 }
 
 @media screen and (max-width:700px) {

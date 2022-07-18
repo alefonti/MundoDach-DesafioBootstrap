@@ -3,6 +3,11 @@
     transition: all 1s;
 }
 
+.boton-test:hover {
+    transform: scale(1.2);
+    transition: all 1s;
+}
+
 .nav-link:hover {
     color: $color-fondo;
     transition: all 0.7s linear;
