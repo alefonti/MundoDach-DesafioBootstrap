@@ -1,34 +1,10 @@
 function iniciarCuestionario(){
+    let preguntas = [pregunta1(), pregunta2(), pregunta3(), pregunta4(), pregunta5(), pregunta6(), pregunta7(), pregunta8(), pregunta9(), pregunta10()];
     let puntaje = 0;
-    if (pregunta1()){
-        puntaje++;
-    }
-    if (pregunta2()){
-        puntaje++;
-    }
-    if (pregunta3()){
-        puntaje++;
-    }
-    if (pregunta4()){
-        puntaje++;
-    }
-    if (pregunta5()){
-        puntaje++;
-    }
-    if (pregunta6()){
-        puntaje++;
-    }
-    if (pregunta7()){
-        puntaje++;
-    }
-    if (pregunta8()){
-        puntaje++;
-    }
-    if (pregunta9()){
-        puntaje++;
-    }
-    if (pregunta10()){
-        puntaje++;
+    for (pregunta of preguntas) {
+        if (pregunta){
+            puntaje++;
+        }
     }
     return resultado(puntaje);
 }
