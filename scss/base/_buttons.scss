@@ -12,3 +12,9 @@
     font-size: small;
     font-weight: bold;
 }
+
+.boton-tienda {
+    @extend .boton;
+    padding: 1% 4%;
+    margin-left: 47%;
+}

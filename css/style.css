@@ -1,4 +1,4 @@
-.boton, section .container-cards .card .container-boton .boton-cartas, .boton-test {
+.boton, section .container-cards .card .container-boton .boton-cartas, .boton-tienda, .boton-test {
   border: 1px solid black;
   background-color: #f6c4cd;
   border-radius: 5px;
@@ -10,6 +10,11 @@
 .boton-test {
   font-size: small;
   font-weight: bold;
+}
+
+.boton-tienda {
+  padding: 1% 4%;
+  margin-left: 47%;
 }
 
 .boton-cartas:hover {
