@@ -17,5 +17,8 @@
     "url": "https://github.com/alefonti/MundoDach-DesafioBootstrap/issues"
   },
   "homepage": "https://github.com/alefonti/MundoDach-DesafioBootstrap#readme",
-  "description": "Pagina dedicada a la información y entretenimiento referente a los perros Dachshund, mejor conocidos como perros salchicha."
+  "description": "Pagina dedicada a la información y entretenimiento referente a los perros Dachshund, mejor conocidos como perros salchicha.",
+  "dependencies": {
+    "sweetalert2": "^11.4.27"
+  }
 }

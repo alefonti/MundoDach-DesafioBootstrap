@@ -1,27 +1,15 @@
+let botonQuiz = document.querySelector('#botonCuestionario');
+
+
 function iniciarCuestionario(){
     let preguntas = [pregunta1(), pregunta2(), pregunta3(), pregunta4(), pregunta5(), pregunta6(), pregunta7(), pregunta8(), pregunta9(), pregunta10()];
     let puntaje = 0;
-    for (pregunta of preguntas) {
+    for (let pregunta of preguntas) {
         if (pregunta){
             puntaje++;
         }
     }
     return resultado(puntaje);
-}
-
-function resultado(puntaje){
-    if (puntaje<=3){
-        alert("Lo siento! No sabes practicamente nada de perros salchicha, deberias aprender antes de tener uno!!!"); 
-    }
-    else if (puntaje<=6){
-        alert("No esta tan mal, pero deberias aprender un poco mas acerca de nuestros amigos caninos!!!");
-    }
-    else if (puntaje<=9){
-        alert("Muy bien! Casi perfecto! Sos casi un experto en perros salchicha, felicidades!!!");
-    }
-    else {
-        alert("Felicidades!! Sos un experto de los perros salchicha, seguro tu amigo canino lo aprecia mucho!!")
-    }
 }
 
 function pregunta1(){
@@ -74,3 +62,25 @@ function pregunta10(){
     respuesta = respuesta.toUpperCase();
     return (respuesta=="A" || respuesta=="B" || respuesta=="C");
 }
+
+function resultado(puntaje){
+    let texto = '';
+    if (puntaje<=3){
+        texto = 'Lo siento! No sabes practicamente nada de perros salchicha, deberias aprender antes de tener uno!!!';
+    }
+    else if (puntaje<=6){
+        texto = 'No esta tan mal, pero deberias aprender un poco mas acerca de nuestros amigos caninos!!!';
+    }
+    else if (puntaje<=9){
+        texto = 'Muy bien! Casi perfecto! Sos casi un experto en perros salchicha, felicidades!!!';
+    }
+    else {
+        texto = 'Felicidades!! Sos un experto de los perros salchicha, seguro tu amigo canino lo aprecia mucho!!';
+    }
+    Swal.fire({
+        title: 'Resultado:',
+        text: texto
+    });
+}
+
+botonQuiz.addEventListener('click', iniciarCuestionario);
