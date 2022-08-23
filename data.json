@@ -1,0 +1,51 @@
+[
+    {
+    "id": 1,
+    "nombre": "Polera Gris",
+    "precio": 4000,
+    "img": "/multimedia/images/productos/tienda1.webp"
+    },
+    {
+    "id": 2,
+    "nombre": "Buzo Celeste",
+    "precio": 2500,
+    "img": "/multimedia/images/productos/tienda2.webp"
+    },
+    {
+    "id": 3,
+    "nombre": "Piloto Azul",
+    "precio": 3500,
+    "img": "/multimedia/images/productos/tienda3.webp"
+    },
+    {
+    "id": 4,
+    "nombre": "Piloto Naranja",
+    "precio": 3500,
+    "img": "/multimedia/images/productos/tienda4.webp"
+    },
+    {
+    "id": 5,
+    "nombre": "Camisa Cuadros",
+    "precio": 4000,
+    "img": "/multimedia/images/productos/tienda5.webp"
+    },
+    {
+    "id": 6,
+    "nombre": "Polera Cuadros",
+    "precio": 4000,
+    "img": "/multimedia/images/productos/tienda6.webp"
+    },
+    {
+    "id": 7,
+    "nombre": "Buzo Gris",
+    "precio": 4500,
+    "img": "/multimedia/images/productos/tienda7.webp"
+    },
+    {
+    "id": 8,
+    "nombre": "Polera Cuadros Amarillos",
+    "precio": 4200,
+    "img": "/multimedia/images/productos/tienda8.webp"
+    }
+
+]

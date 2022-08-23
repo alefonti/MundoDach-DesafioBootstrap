@@ -7,61 +7,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const DOMtotal = document.querySelector('#total');
     const DOMbotonVaciar = document.querySelector('#boton-vaciar');
 
-    const listaDeProductos = [
-        {
-            id: 1,
-            nombre: "Polera Gris",
-            precio: 4000,
-            img: '/multimedia/images/productos/tienda1.webp'
-        },
-        {
-            id: 2,
-            nombre: "Buzo Celeste",
-            precio: 2500,
-            img: '/multimedia/images/productos/tienda2.webp'
-        },
-        {
-            id: 3,
-            nombre: "Piloto Azul",
-            precio: 3500,
-            img: '/multimedia/images/productos/tienda3.webp'
-        },
-        {
-            id: 4,
-            nombre: "Piloto Naranja",
-            precio: 3500,
-            img: '/multimedia/images/productos/tienda4.webp'
-        },
-        {
-            id: 5,
-            nombre: "Camisa Cuadros",
-            precio: 4000,
-            img: '/multimedia/images/productos/tienda5.webp'
-        },
-        {
-            id: 6,
-            nombre: "Polera Cuadros",
-            precio: 4000,
-            img: '/multimedia/images/productos/tienda6.webp'
-        },
-        {
-            id: 7,
-            nombre: "Buzo Gris",
-            precio: 4500,
-            img: '/multimedia/images/productos/tienda7.webp'
-        },
-        {
-            id: 8,
-            nombre: "Polera Cuadros Amarillos",
-            precio: 4200,
-            img: '/multimedia/images/productos/tienda8.webp'
-        },
-
-    ];
+    async function getProducts(url) {
+        const listaProductos = [];
+        await fetch(url)
+        .then((response) => response.json())
+        .then((data) => {
+            data.forEach((elemento) => {
+                listaProductos.push(elemento)
+            });
+        });
+        return listaProductos;
+    }
 
 
-    function renderizarProductos() {
-        listaDeProductos.forEach((info) => {
+    async function renderizarProductos() {
+        const listaProductos = await getProducts('../data.json');
+        listaProductos.forEach((info) => {
             //Estructura
             const miNodo = document.createElement('div');
             miNodo.classList.add('card', 'col-sm-4', 'me-5', 'mb-3', 'mt-3');
@@ -93,10 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
             miNodoCardBody.append(miNodoBoton);
             miNodo.append(miNodoCardBody);
             DOMitems.append(miNodo);
-        
         });
-    }
-
+}
 
     function anadirProductoAlCarrito(e){
         carrito.push(e.target.getAttribute('marcador'));
@@ -104,14 +63,15 @@ document.addEventListener('DOMContentLoaded', () => {
         guardarCarritoEnLocalStorage();
     }
 
-    function renderizarCarrito(){
+    async function renderizarCarrito(){
         //Vacio el html
         DOMcarrito.innerText = '';
         //Saco los duplicados
         const carritoSinDuplicados = [...new Set(carrito)];
         //Genero los nodos a partir del carrito
+        const listaProductos = await getProducts('../data.json');
         carritoSinDuplicados.forEach((item) => {
-            const miItem = listaDeProductos.filter((itemBaseDatos) => {
+            const miItem = listaProductos.filter((itemBaseDatos) => {
                 return itemBaseDatos.id === parseInt(item);
             });
             const numeroUnidadesItem = carrito.reduce((total, itemId) => {
@@ -133,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
             DOMcarrito.append(miNodo);
         });
         //Renderizo el precio total en el html
-        DOMtotal.innerText = calcularTotal();
+        DOMtotal.innerText = await calcularTotal();
     }
 
     function borrarItemCarrito(e) {
@@ -145,9 +105,10 @@ document.addEventListener('DOMContentLoaded', () => {
         guardarCarritoEnLocalStorage();
     }
 
-    function calcularTotal() {
+    async function calcularTotal() {
+        const listaProductos = await getProducts('../data.json');
         return carrito.reduce((total, item) =>{
-            const miItem = listaDeProductos.filter((itemBaseDatos) => {
+            const miItem = listaProductos.filter((itemBaseDatos) => {
                 return itemBaseDatos.id === parseInt(item);
             });
             return total + miItem[0].precio;
